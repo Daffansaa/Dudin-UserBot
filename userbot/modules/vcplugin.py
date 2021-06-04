@@ -6,7 +6,7 @@ import asyncio
 
 
 @register(outgoing=True, pattern="^.vcinvite(?: |$)(.*)")
-async def _(e):
+async def _(event):
     ok = await event edit "`Inviting Members to Voice Chat...`")
     users = []
     z = 0
