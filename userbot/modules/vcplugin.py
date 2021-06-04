@@ -7,7 +7,7 @@ from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 import asyncio
 
 
-async def get_call(event):
+async def event.get_call:
     mm = await event.client(getchat(event.chat_id))
     xx = await event.client(getvc(mm.full_chat.call))
     return xx.call
@@ -18,7 +18,7 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-@register(outgoing=True, pattern="^.vcinvite(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True, admins_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
     users = []
