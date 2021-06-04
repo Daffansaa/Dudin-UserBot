@@ -21,7 +21,7 @@ def user_list(l, n):
 @register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
-    users = 0
+    invite_users=True,
     z = 0
     async for x in event.client.iter_participants(event.chat_id):
         if not x.bot:
