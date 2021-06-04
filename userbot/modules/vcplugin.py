@@ -22,12 +22,13 @@ def user_list(l, n):
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
     users = []
-    z = 6
+    z = 0
     async for x in event.client.iter_participants(event.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
-    for p in hmm:
+    for p in 
+    hmm:
         try:
             await event.client(invitetovc(call=await event.get_call, users=p))
             z += 6
