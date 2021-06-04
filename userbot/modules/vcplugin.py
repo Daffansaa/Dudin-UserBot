@@ -7,16 +7,16 @@ import asyncio
 
 @register(outgoing=True, pattern="^.vcinvite(?: |$)(.*)")
 async def _(e):
-    ok = await eor(e, "`Inviting Members to Voice Chat...`")
+    ok = await event edit "`Inviting Members to Voice Chat...`")
     users = []
     z = 0
-    async for x in e.client.iter_participants(e.chat_id):
+    async for x in event.client.iter_participants(event.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await e.client(invitetovc(call=await get_call(e), users=p))
+            await event.client(invitetovc(call=await get_call(event), users=p))
             z += 6
         except BaseException:
             pass
