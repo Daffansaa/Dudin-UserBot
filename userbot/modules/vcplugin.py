@@ -2,12 +2,25 @@
 # Copyright (C) 2021 Geez Project
 from userbot.events import register
 from userbot import CMD_HELP
+from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
+
 import asyncio
+
+
+async def get_call(event):
+    mm = await event.client(getchat(event.chat_id))
+    xx = await event.client(getvc(mm.full_chat.call))
+    return xx.call
+
+
+def user_list(l, n):
+    for i in range(0, len(l), n):
+        yield l[i : i + n]
 
 
 @register(outgoing=True, pattern="^.vcinvite(?: |$)(.*)")
 async def _(event):
-    ok = await event edit "`Inviting Members to Voice Chat...`")
+    await event.edit("`Inviting Members to Voice Chat...`")
     users = []
     z = 0
     async for x in event.client.iter_participants(event.chat_id):
@@ -20,7 +33,7 @@ async def _(event):
             z += 6
         except BaseException:
             pass
-    await ok.edit(f"`Invited {z} users`")
+    await event.edit(f"`Invited {z} users`")
 
 
         
