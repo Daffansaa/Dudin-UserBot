@@ -27,7 +27,7 @@ async def _(e):
         
         CMD_HELP.update(
     {
-        "fakeaction": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcjoin : .vcstop : .vcplay : .vcinvite .fgame <jumlah text>`"
+        "fakeaction": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcjoin : .vcstop : .vcplay : .vcinvite : .fgame <jumlah text>`"
         "\n• : Fake typing ini Berfungsi dalam group"
     }
 )
