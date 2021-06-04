@@ -5,7 +5,7 @@ from userbot import CMD_HELP
 import asyncio
 
 
-@register(outgoing=True, pattern="^.vcinvite(?: |$)(.*)")
+@register(outgoing=True, pattern="^.vcinvit(?: |$)(.*)")
 async def _(e):
     ok = await eor(e, "`Inviting Members to Voice Chat...`")
     users = []
