@@ -29,7 +29,7 @@ async def _(event):
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await event.client(invitetovc(call=await get_call(event), users=p))
+            await event.client(invitetovc(call=await event.get_call, users=p))
             z += 6
         except BaseException:
             pass
@@ -38,7 +38,7 @@ async def _(event):
 
         
         
-        CMD_HELP.update(
+CMD_HELP.update(
     {
         "vcplugin": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcjoin : .vcstop : .vcplay : .vcinvite : .fgame <jumlah text>`"
         "\n• : Fake typing ini Berfungsi dalam group"
