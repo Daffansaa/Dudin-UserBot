@@ -18,7 +18,7 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True, admins_only=True)
+@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
     users = []
