@@ -54,10 +54,6 @@ async def _(e):
     await ok.edit(f"`Invited {z} users`")
 
 @register(outgoing=True, pattern="^.vcstart(?: |$)(.*)")
-    pattern="startvc$",
-    admins_only=True,
-    groups_only=True,
-)
 async def _(e):
     try:
         await e.client(startvc(e.chat_id))
