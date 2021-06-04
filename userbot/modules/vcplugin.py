@@ -7,7 +7,7 @@ from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 import asyncio
 
 
-async def event.get_call:
+async def get_call(event):
     mm = await event.client(getchat(event.chat_id))
     xx = await event.client(getvc(mm.full_chat.call))
     return xx.call
