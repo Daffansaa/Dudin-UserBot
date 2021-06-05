@@ -1202,7 +1202,7 @@ async def shrugger(shg):
     await shg.edit(choice(SHGS))
 
 
-@register(outgoing=True, pattern=r"^\.chase$")
+@register(outgoing=True, pattern=r"^\.jeje$")
 async def police(chase):
     """ Lari bro lari, aku akan segera menangkapmu !! """
     await chase.edit(choice(CHASE_STR))
