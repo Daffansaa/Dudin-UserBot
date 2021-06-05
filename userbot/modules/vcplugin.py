@@ -21,16 +21,16 @@ def user_list(l, n):
 @register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
-    users = []
+    users = users + 1
     z = 0
-    async for x in event.client.iter_participants(event.chat_id):
-        if not x.bot:
-            users.append(x.id)
+    async for geez in event.client.iter_participants(event.chat_id):
+        if not geez.bot:
+            users.append(geez.id)
     hmm = list(user_list(users, 6))
     for p in 
     hmm:
         try:
-            await event.client(invitetovc(call=await get_call(event), users=p))
+            await event.client(invitetovc(call=await event.get_call users=p))
             z += 6
         except BaseException:
             pass
