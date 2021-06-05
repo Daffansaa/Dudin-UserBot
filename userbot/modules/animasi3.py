@@ -1850,7 +1850,7 @@ CMD_HELP.update({
     "\nUsage: jika kamu melakukan ini, aku akan menangis."
     "\n\n>`.shg`"
     "\nUsage: Angkat bahu!"
-    "\n\n>`.run`"
+    "\n\n>`.karin`"
     "\nUsage: Biarkan Aku Lari, Lari, LARI!"
     "\n\n>`.jeje`"
     "\nUsage: Sebaiknya Anda mulai berlari"
