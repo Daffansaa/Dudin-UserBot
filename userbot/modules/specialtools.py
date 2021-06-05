@@ -18,7 +18,7 @@ async def daudtoid(event):
         await event.edit("`Reply To Audio Only..`")
         return
     await event.edit("`processing...`")
-    d = os.path.join("./geez", "ul.mp3")
+    d = os.path.join("resources/extras", "ul.mp3")
     await event.edit("`Downloading... Large Files Takes Time..`")
     await event.client.download_media(ureply, d)
     await event.edit("`Done.. Now reply to video In which u want to add that Audio`")
@@ -32,9 +32,9 @@ async def adaudroid(event):
         return
     xx = await event.edit("`processing...`")
     ultt = await event.client.download_media()
-    ls = os.listdir("./geez")
+    ls = os.listdir("resources/extras")
     z = "ul.mp3"
-    x = "./geez/ul.mp3"
+    x = "resources/extras/ul.mp3"
     if z not in ls:
         await event.edit("`First reply an audio with .aw`")
         return
