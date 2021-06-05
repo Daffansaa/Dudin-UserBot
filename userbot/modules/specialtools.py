@@ -50,7 +50,7 @@ async def adaudroid(event):
     )
     os.remove("ok.mp4")
     os.remove(x)
-    os.remove(ultt)
+    os.remove(gezza)
     await event.delete()
 
 
