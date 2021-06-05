@@ -1208,7 +1208,7 @@ async def police(chase):
     await chase.edit(choice(CHASE_STR))
 
 
-@register(outgoing=True, pattern=r"^\.run$")
+@register(outgoing=True, pattern=r"^\.karin$")
 async def runner_lol(run):
     """ Lari, lari, LARIII! """
     await run.edit(choice(RUNS_STR))
@@ -1852,7 +1852,7 @@ CMD_HELP.update({
     "\nUsage: Angkat bahu!"
     "\n\n>`.run`"
     "\nUsage: Biarkan Aku Lari, Lari, LARI!"
-    "\n\n>`.chase`"
+    "\n\n>`.jeje`"
     "\nUsage: Sebaiknya Anda mulai berlari"
     "\n\n>`.metoo`"
     "\nUsage: Haha ya"
