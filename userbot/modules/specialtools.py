@@ -3,6 +3,7 @@ from datetime import datetime as dt
 from random import choice
 from shutil import rmtree
 
+import moviepy.editor as m
 import pytz
 import requests
 from bs4 import BeautifulSoup as b
