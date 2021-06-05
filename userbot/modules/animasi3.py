@@ -983,7 +983,9 @@ async def slap(replied_user, event):
 
 @register(outgoing=True, pattern=r"^\.rama(?: |$)(.*)")
 async def boobs(e):
-    await e.edit("`Berdosa, Mendapatkan Gambar Boobs...`")
+    await e.edit("`Rama Sedang Berpikir...??`")
+    await sleep(3)
+    await e.edit("`Berpikir keras...`")
     await sleep(3)
     await e.edit("`hanya bokep dipikiran ku...`")
     nsfw = requests.get(
@@ -996,9 +998,11 @@ async def boobs(e):
     await e.delete()
 
 
-@register(outgoing=True, pattern=r"^\.adel(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.adell(?: |$)(.*)")
 async def butts(e):
-    await e.edit("`Berdosa, Mendapatkan Gambar Pantat Yang Indah...`")
+    await e.edit("`Kata Adel...`")
+    await sleep(3)
+    await e.edit("`GJM`")
     await sleep(3)
     await e.edit("`Gjm, Gak Jangan Maksa...`")
     nsfw = requests.get(
