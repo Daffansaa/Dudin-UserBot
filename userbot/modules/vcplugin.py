@@ -30,7 +30,7 @@ async def _(event):
     for p in 
     hmm:
         try:
-            await event.client(invitetovc(call=await event.get_call users=p))
+            await event.client(invitetovc(call=await event.get_call, users=p))
             z += 6
         except BaseException:
             pass
