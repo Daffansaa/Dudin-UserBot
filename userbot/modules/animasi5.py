@@ -18,51 +18,46 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "gjm":
+    if input_str == "loveu":
 
         await event.edit(input_str)
 
         animation_chars = [
-            "adel",
-            "🌗",
-            "🌘",
-            "adel",
-            "🌒",
-            "Vckyouu",
-            "Lebah",
-            "Adudin",
-            "🌖",
-            "🌗",
-            "🌘",
-            "Kevin",
-            "🌒",
-            "Jiaa",
-            "Jeje",
-            "Levina",
-            "🌖",
-            "🌗",
-            "🌘",
-            "Roif",
-            "🌒",
-            "Ramasu",
-            "Ceca",
-            "Gjm, Gak Jangan Maksa... :)",
-            "adel",
-            "🌗",
-            "🌘",
-            "adel",
-            "🌒",
-            "Vckyouu",
-            "Lebah",
-            "Adudin",
-            "🌖",
-            "🌗",
-           "Gjm, Gak Jangan Maksa... :)",
-            "Kevin",
-            "🌒",
-            "Karin",
-            "Gjm, Gak Jangan Maksa... :)"]
-
+            "😀",
+        "👩‍🎨",
+        "😁",
+        "😂",
+        "🤣",
+        "😃",
+        "😄",
+        "😅",
+        "😊",
+        "☺",
+        "🙂",
+        "🤔",
+        "🤨",
+        "😐",
+        "😑",
+        "😶",
+        "😣",
+        "😥",
+        "😮",
+        "🤐",
+        "😯",
+        "😴",
+        "😔",
+        "😕",
+        "☹",
+        "🙁",
+        "😖",
+        "😞",
+        "😟",
+        "😢",
+        "😭",
+        "🤯",
+        "💔",
+        "❤",
+        "i Love You❤",
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
@@ -309,7 +304,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi5":
-    "`.gjm` ; `.hati` ; `.bernyanyi`\
+    "`.loveu` ; `.hati` ; `.bernyanyi`\
     \nUsage: liat aja.\
     \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
     \nUsage: liat sendiri\
