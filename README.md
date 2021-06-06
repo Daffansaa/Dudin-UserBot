@@ -30,7 +30,7 @@
 <a href="https://t.me/VcgSupportGroup"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## ⚡GEEZ-UserBotFORK
-![Dudin UserBot](https://telegra.ph/foto-06-06.png)
+![Dudin UserBot](https://telegra.ph/file/dc21904f1c9d70c55812c.jpg)
 
 <h3 align="center">Userbot Used for Fun on Telegram, and for Maintianing Your Group.</h3>
 <p align="center">&nbsp;</p>
