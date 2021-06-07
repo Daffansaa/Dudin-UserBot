@@ -18,10 +18,10 @@ def user_list(l, n):
         yield l[i : i + n]
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)", groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcinvite(?: |$)(.*)",disable_errors=True, groups_only=True)
 async def _(event):
     await event.edit("`Inviting Members to Voice Chat...`")
-    users = users + 1
+    users = []
     z = 0
     async for geez in event.client.iter_participants(event.chat_id):
         if not geez.bot:
