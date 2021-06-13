@@ -351,7 +351,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡**Geez-Fork**⚡ Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... **⚡Geez-Fork⚡** Has Been Active!!```")
     return
 
 with bot:
@@ -428,7 +428,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("⚡**GeezFork 𝙐𝙎𝙀𝙍𝘽𝙊𝙏**⚡, Buat Userbot Mu Sendiri [Tekan Disini](https://adudon01/Dudin-UserBot)")
+                await event.reply("**⚡GeezFork 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**, Buat Userbot Mu Sendiri [Tekan Disini](https://adudon01/Dudin-UserBot)")
             else:
                 await event.reply(f"`Hai {DEFAULTUSER}\n\nApa Kabarmu ? 😊`")
 
@@ -459,7 +459,7 @@ with bot:
             else:
                 result = builder.article(
                     " **╡⚡GeezFork-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞ ",
-                    text="""**Anda Bisa Membuat ⚡**GeezFork-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri Dengan Cara :** __Tekan Dibawah Ini__ 👇""",
+                    text="""**Anda Bisa Membuat ⚡GeezFork-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri Dengan Cara :** __Tekan Dibawah Ini__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
