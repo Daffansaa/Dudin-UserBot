@@ -45,8 +45,8 @@ async def _(event):
         "telethon.network.mtprotosender -\nINFO - Received response without parent request",
         "INFO - Geez-Project: Logged in as 557667062",
         "INFO - Geez-Project: Successfully...",
-        "919852+00:00 app[worker.1]: 919 - Geez-Project -",
-        "INFO - ⚡ Geez-Project⚡ ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
+        "919852+00:00 app[worker.1]: 919 - Geez-Fork -",
+        "INFO - ⚡ Geez-Fork⚡ ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
         "**Build Succeeded**"
 
     ]
